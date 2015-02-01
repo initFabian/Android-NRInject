@@ -1,0 +1,12 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <drawable name="toast_background">#ff7676bc</drawable>
+    <drawable name="verify_background">#ff1fdbdb</drawable>
+    <drawable name="invalid_warning">#ffea6153</drawable>
+
+</resources>

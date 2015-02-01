@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"    android:background="#F1F1F1"
+    tools:context=".mainListView">
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/row"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/frameLayout">
+
+    </ListView>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/toast_background"
+        android:id="@+id/frameLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="NR Inject"
+            android:id="@+id/textView"
+            android:layout_gravity="center"
+            android:textColor="#ffffffff" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:drawableTop="@drawable/ic_action_refresh"
+            android:id="@+id/refresh_button"
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/toast_background"
+            android:layout_marginLeft="20dp"
+            android:enabled="true"
+            android:shadowColor="#00ffffff" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:drawableTop="@drawable/ic_action_settings"
+            android:id="@+id/settings_button"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/toast_background"
+            android:layout_marginRight="20dp"
+            android:enabled="true"
+            android:paddingTop="2dp" />
+
+    </FrameLayout>
+
+
+</RelativeLayout>

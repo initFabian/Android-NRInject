@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NR Inject</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="preference_url_settings">com.mioty.nrinject.preference_file_key</string>
+    <string name="PREF_IPADDRESS">ipaddress</string>
+    <string name="PREF_PASSWORD">password</string>
+    <string name="refreshStr">Refresh</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

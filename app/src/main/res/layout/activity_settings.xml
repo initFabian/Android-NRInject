@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.mioty.fabianbuentello.nrinject.Settings"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="right|bottom"
+    android:background="#ff7676bc"
+    android:id="@+id/LinearLayout1">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/abc_action_bar_default_height_material"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/toast_background"
+        android:id="@+id/frameLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Settings"
+            android:id="@+id/textView"
+            android:layout_gravity="center"
+            android:textColor="#ffffffff" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:drawableTop="@drawable/ic_action_back"
+            android:id="@+id/backBtn"
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/toast_background"
+            android:layout_marginLeft="20dp"
+            android:enabled="true"
+            android:shadowColor="#00ffffff" />
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/searchLine"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/frameLayout"
+        android:alpha="0.2"
+        android:background="#000000"
+        android:fadingEdge="vertical"
+        android:visibility="visible" />
+
+    <EditText
+        android:id="@+id/ipAddress"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/searchLine"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="IP Address"
+        android:singleLine="true"
+        android:textColor="#ffffffff">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/port"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ipAddress"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Port"
+        android:singleLine="true"
+        android:textColor="#ffffffff">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/port"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Password"
+        android:password="true"
+        android:capitalize="none"
+        android:lines="1"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="#ffffffff">
+        android:inputType="textVisiblePassword"
+        android:password="true">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/Verify_Button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:text="Verify"
+        android:textColor="#ffffffff"
+        android:background="@drawable/verify_background" />
+
+</RelativeLayout>
